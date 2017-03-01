@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="14F1605" minimumToolsVersion="Automatic">
+    <entity name="CustomText" representedClassName="CustomText" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Merge" representedClassName="Merge" syncable="YES">
+        <attribute name="descriptions" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fileName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="imgPhoto" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="strDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Model" representedClassName="Model" syncable="YES">
+        <attribute name="fileName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="model_birth" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="model_city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="model_country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="model_email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="model_ethnicity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="model_gender" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="model_imgPhoto" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="model_imgSignature" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="model_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="model_parent" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="model_phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="model_signDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="model_state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="model_streetAdress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="model_zipCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photoshoot_id" optional="YES" attributeType="Integer 32" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="witness_id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Photoshoot" representedClassName="Photoshoot" syncable="YES">
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="company_logo" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="company_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="company_phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="counter" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="imgSignature" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="photographer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photographer_email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shootDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shootTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="strSignDate" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Property" representedClassName="Property" syncable="YES">
+        <attribute name="fileName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="photoshoot_id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="property_authorizedTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="property_city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="property_coporationName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="property_country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="property_description" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="property_email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="property_imgPhoto" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="property_imgSignature" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="property_individualOwnerName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="property_ownerType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="property_signDate" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="property_state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="property_streetAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="property_tel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="property_zipCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="witness_id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="Witness" representedClassName="Witness" syncable="YES">
+        <attribute name="counter" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="signature" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="signDate" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Merge" positionX="-7596" positionY="-4050" width="128" height="135"/>
+        <element name="Model" positionX="-7589" positionY="-4198" width="128" height="330"/>
+        <element name="Photoshoot" positionX="-7767" positionY="-4059" width="128" height="270"/>
+        <element name="Property" positionX="-7427" positionY="-4203" width="128" height="330"/>
+        <element name="Witness" positionX="-7751" positionY="-4194" width="128" height="120"/>
+        <element name="CustomText" positionX="-7596" positionY="-4050" width="128" height="75"/>
+    </elements>
+</model>
